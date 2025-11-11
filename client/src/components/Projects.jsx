@@ -182,9 +182,9 @@ export default function Projects() {
                   <div className="flex items-start justify-between p-4 border-b">
                     <h3 className="text-lg font-semibold">{projects.find((x) => x.id === active)?.title}</h3>
                     <div className="flex items-center gap-2">
-                      <button onClick={() => redirectTo(projects.find((x) => x.id === active)?.visit)} className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-[rgba(108,132,93,0.95)] text-white font-semibold hover:opacity-90 transition" aria-label="Visit site in current tab">
+                      {/* <button onClick={() => redirectTo(projects.find((x) => x.id === active)?.visit)} className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-[rgba(108,132,93,0.95)] text-white font-semibold hover:opacity-90 transition" aria-label="Visit site in current tab">
                         Visit site <FiExternalLink />
-                      </button>
+                      </button> */}
 
                       <button onClick={() => setActive(null)} className="p-2 rounded-md hover:bg-slate-100 transition" aria-label="Close">
                         <AiOutlineClose size={20} />
@@ -210,7 +210,7 @@ export default function Projects() {
 
                       <div className="mt-6 flex gap-3">
                         <button onClick={() => setActive(null)} className="px-4 py-2 rounded-full border text-sm">Close</button>
-                        <a href={projects.find((x) => x.id === active)?.visit} target="_blank" rel="noreferrer" className="px-4 py-2 rounded-full border text-sm">Open in new tab</a>
+                        {/* <a href={projects.find((x) => x.id === active)?.visit} target="_blank" rel="noreferrer" className="px-4 py-2 rounded-full border text-sm">Open in new tab</a> */}
                       </div>
                     </div>
                   </div>
