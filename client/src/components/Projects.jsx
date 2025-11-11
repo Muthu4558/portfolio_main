@@ -137,19 +137,19 @@ export default function Projects() {
                   <img src={p.img} alt={p.title} loading="lazy" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
 
                   {/* overlay on hover */}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/55 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-4 w-full text-white">
+                  <div className="absolute inset-0 bg-linear-to-t from-black/55 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end backdrop-blur-sm">
+                    <div className="p-4 w-full text-black">
                       <div className="flex items-center justify-between">
                         <h4 className="font-semibold text-lg">{p.title}</h4>
                         <span className="text-xs bg-white/20 px-2 py-1 rounded-full">{p.category}</span>
                       </div>
-                      <p className="mt-2 text-sm text-white/90">{p.short}</p>
+                      <p className="mt-2 text-sm text-black/90">{p.short}</p>
                       <div className="mt-3 flex items-center gap-2">
-                        <button onClick={() => setActive(p.id)} className="inline-flex items-center gap-2 bg-white/10 border border-white/30 px-3 py-2 rounded-full text-xs hover:bg-white/20 transition" aria-label={`View ${p.title}`}>
+                        <button onClick={() => setActive(p.id)} className="text-white inline-flex items-center gap-2 bg-white/10 border border-white/30 px-3 py-2 rounded-full text-xs hover:bg-white/20 transition" aria-label={`View ${p.title}`}>
                           View
                         </button>
 
-                        <a href={p.visit} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 px-3 py-2 rounded-full text-xs hover:bg-indigo-100 transition">
+                        <a href={p.visit} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[rgba(108,132,93,0.95)] text-white px-3 py-2 rounded-full text-xs hover:bg-indigo-100 transition">
                           Visit site <FiExternalLink />
                         </a>
                       </div>
