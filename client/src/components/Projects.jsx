@@ -149,7 +149,7 @@ export default function Projects() {
                           View
                         </button>
 
-                        <a href={p.visit} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[rgba(108,132,93,0.95)] text-white px-3 py-2 rounded-full text-xs hover:bg-indigo-100 transition">
+                        <a href={p.visit} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[rgba(108,132,93,0.95)] text-white px-3 py-2 rounded-full text-xs transition">
                           Visit site <FiExternalLink />
                         </a>
                       </div>
