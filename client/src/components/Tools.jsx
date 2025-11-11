@@ -157,7 +157,7 @@ export default function Tools() {
                             <motion.li
                                 key={t.name}
                                 variants={item}
-                                className="relative"
+                                className="relative border rounded-2xl"
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
                                 viewport={{ once: true, amount: 0.4 }}
@@ -176,7 +176,7 @@ export default function Tools() {
                                     }}
                                     style={{ rotateX, rotateY }}
                                     whileHover={{ scale: 1.03 }}
-                                    className="group relative bg-white border border-slate-100 rounded-2xl p-4 flex flex-col items-center text-center shadow-md hover:shadow-xl transition-transform will-change-transform"
+                                    className="group relative border border-slate-100 rounded-2xl p-4 flex flex-col items-center text-center shadow-md hover:shadow-xl transition-transform will-change-transform"
                                 >
                                     {/* icon circle */}
                                     <div

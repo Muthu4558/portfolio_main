@@ -132,7 +132,7 @@ export default function Projects() {
         <motion.ul layout initial="hidden" animate="show" variants={{ hidden: {}, show: { transition: { staggerChildren: 0.06 } } }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {visible.map((p) => (
             <motion.li key={p.id} className="relative" variants={{ hidden: { opacity: 0, y: 8 }, show: { opacity: 1, y: 0 } }}>
-              <div className="group rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100">
+              <div className="group rounded-2xl overflow-hidden shadow-lg bg-white border">
                 <div className="relative">
                   <img src={p.img} alt={p.title} loading="lazy" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
 
