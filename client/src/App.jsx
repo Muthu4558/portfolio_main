@@ -1,13 +1,15 @@
+// App.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import NotFound from "./pages/NotFound"; // <-- import
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* Catch-all 404 route */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

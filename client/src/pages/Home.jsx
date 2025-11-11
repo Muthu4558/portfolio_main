@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar"
 import About from "../components/About"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
@@ -9,6 +10,7 @@ import Tools from "../components/Tools"
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <Hero />
       <Tools />
       <About />
