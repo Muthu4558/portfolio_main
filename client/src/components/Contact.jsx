@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaPhoneAlt, FaPaperPlane, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const PRIMARY = "#6c845d";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const quotes = [
   { text: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" },
@@ -32,28 +34,40 @@ export default function Contact() {
     setErrors((prev) => ({ ...prev, [k]: undefined }));
   };
 
-  const handleSubmit = (ev) => {
-    ev.preventDefault();
-    const e = validate();
-    if (Object.keys(e).length) {
-      setErrors(e);
-      return;
-    }
+const handleSubmit = async (ev) => {
+  ev.preventDefault();
+  const e = validate();
+  if (Object.keys(e).length) {
+    setErrors(e);
+    return;
+  }
 
-    setSubmitting(true);
-    const subject = encodeURIComponent(form.subject || `Message from ${form.name}`);
-    const bodyLines = [`Name: ${form.name}`, `Email: ${form.email}`, "", form.message, "", "— Sent from portfolio"];
-    const body = encodeURIComponent(bodyLines.join("\n"));
-    const mailto = `mailto:muthu03072003@gmail.com?subject=${subject}&body=${body}`;
+  setSubmitting(true);
+  try {
+    const resp = await fetch(`${BACKEND_URL}/api/contact`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
 
-    setTimeout(() => {
-      window.location.href = mailto;
-      setSubmitting(false);
-      setSent(true);
-      setForm({ name: "", email: "", subject: "", message: "" });
-      setTimeout(() => setSent(false), 3500);
-    }, 380);
-  };
+    const data = await resp.json();
+    if (!resp.ok) throw new Error(data?.error || "Failed to send message");
+
+    // 🎉 Success toast
+    toast.success("Message sent successfully! ✅");
+
+    setSent(true);
+    setForm({ name: "", email: "", subject: "", message: "" });
+    setTimeout(() => setSent(false), 3500);
+  } catch (err) {
+    console.error("Contact send error:", err);
+    toast.error("Failed to send message. Please try again later. ❌");
+    setErrors((prev) => ({ ...prev, submit: err.message || "Failed to send" }));
+  } finally {
+    setSubmitting(false);
+  }
+};
+
 
   const nextQuote = () => setQuoteIndex((i) => (i + 1) % quotes.length);
 
@@ -167,7 +181,7 @@ export default function Contact() {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-5 py-3 rounded-full bg-linear-to-r from-[#6c845d] to-[#556e4d] text-white font-semibold shadow"
                   aria-label="Send message"
                 >
-                  <FaPaperPlane /> {submitting ? "Opening mail…" : "Send message"}
+                  <FaPaperPlane /> {submitting ? "Sending…" : "Send message"}
                 </motion.button>
 
                 <button
