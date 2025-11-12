@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhoneAlt, FaPaperPlane, FaGithub, FaLinkedin, FaWhatsapp 
 import toast from "react-hot-toast";
 
 const PRIMARY = "#6c845d";
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 const quotes = [
   { text: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" },
