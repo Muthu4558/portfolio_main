@@ -12,11 +12,13 @@ import Ecom2 from "../assets/projects/cake-ecom.png";
 import Ecom3 from "../assets/projects/cloth-ecom.png";
 import Neet from "../assets/projects/neet.png";
 import Sector from "../assets/projects/28.png";
+import Hitech from "../assets/projects/hitech.png"
 
 const PRIMARY = "#6c845d";
 
 const projects = [
   { id: 1, title: "Taskgo", img: TaskGo, category: "Web APP", tech: ["MERN Stack"], short: "A sleek task & productivity app with smart lists, drag-drop and calendar sync.", visit: "https://taskgo.in/" },
+  { id: 1, title: "Hi Tech Enterprises", img: Hitech, category: "Web APP", tech: ["MERN Stack"], short: "A Shop Site, For the Blog page we having Admin Page to change blogs", visit: "https://hitechenterprises.net" },
   { id: 2, title: "Medical Chatbot", img: ChatBot, category: "Chatbot", tech: ["HTML,CSS", "JS", "Gemeni API"], short: "AI-assisted medical triage chatbot for patient guidance and triaging.", visit: "https://muthu4558.github.io/Medical-chatbot-Nizzy/" },
   { id: 3, title: "Musitechhub", img: Musitechhub, category: "Web APP", tech: ["MERN Stack"], short: "A creative agency site for Musitechhub — portfolio, services & contact.", visit: "https://musitechhub.com" },
   { id: 4, title: "VVJM - School", img: School, category: "Landing", tech: ["HTML,CSS", "JS", "PHP"], short: "School website with events, gallery and CMS-driven news pages.", visit: "https://muthu4558.github.io/VVJM/" },
