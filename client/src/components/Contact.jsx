@@ -58,7 +58,7 @@ const handleSubmit = async (ev) => {
 
     setSent(true);
     setForm({ name: "", email: "", subject: "", message: "" });
-    setTimeout(() => setSent(false), 3500);
+    // setTimeout(() => setSent(false), 3500);
   } catch (err) {
     console.error("Contact send error:", err);
     toast.error("Failed to send message. Please try again later. ❌");
@@ -192,7 +192,7 @@ const handleSubmit = async (ev) => {
                   Reset
                 </button>
 
-                {sent && <div className="mt-2 sm:mt-0 text-sm text-green-600">Mail client opened — check your email app.</div>}
+                {sent && <div className="mt-2 sm:mt-0 text-sm text-green-600">Form submitted successfully!</div>}
               </div>
             </form>
           </motion.div>
