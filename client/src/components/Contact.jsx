@@ -58,7 +58,7 @@ const handleSubmit = async (ev) => {
 
     setSent(true);
     setForm({ name: "", email: "", subject: "", message: "" });
-    // setTimeout(() => setSent(false), 3500);
+    setTimeout(() => setSent(false), 9000);
   } catch (err) {
     console.error("Contact send error:", err);
     toast.error("Failed to send message. Please try again later. ❌");
