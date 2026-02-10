@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
-import MyPic from "../assets/muthu.png"; // ← replace with your actual image path
+import MyPic from "../assets/muthu2.png"; // ← replace with your actual image path
 
 const PRIMARY = "#6c845d"; // navbar color
 

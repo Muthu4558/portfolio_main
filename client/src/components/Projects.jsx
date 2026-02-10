@@ -18,15 +18,15 @@ const PRIMARY = "#6c845d";
 
 const projects = [
   { id: 1, title: "Taskgo", img: TaskGo, category: "Web APP", tech: ["MERN Stack"], short: "A sleek task & productivity app with smart lists, drag-drop and calendar sync.", visit: "https://taskgo.in/" },
-  { id: 1, title: "Hi Tech Enterprises", img: Hitech, category: "Web APP", tech: ["MERN Stack"], short: "A Shop Site, For the Blog page we having Admin Page to change blogs", visit: "https://hitechenterprises.net" },
-  { id: 2, title: "Medical Chatbot", img: ChatBot, category: "Chatbot", tech: ["HTML,CSS", "JS", "Gemeni API"], short: "AI-assisted medical triage chatbot for patient guidance and triaging.", visit: "https://muthu4558.github.io/Medical-chatbot-Nizzy/" },
-  { id: 3, title: "Musitechhub", img: Musitechhub, category: "Web APP", tech: ["MERN Stack"], short: "A creative agency site for Musitechhub — portfolio, services & contact.", visit: "https://musitechhub.com" },
-  { id: 4, title: "VVJM - School", img: School, category: "Landing", tech: ["HTML,CSS", "JS", "PHP"], short: "School website with events, gallery and CMS-driven news pages.", visit: "https://muthu4558.github.io/VVJM/" },
-  { id: 5, title: "E-commerce (Generic)", img: Ecom1, category: "E-commerce", tech: ["MERN Stack"], short: "Modern e-commerce platform — cart, checkout & order dashboard.", visit: "https://origin-organic.onrender.com" },
-  { id: 6, title: "Cake E-commerce", img: Ecom2, category: "E-commerce", tech: ["HTML", "CSS", "JS"], short: "Specialised bakery storefront with custom cake builder UI.", visit: "https://muthu4558.github.io/Simple-cakeshop/" },
-  { id: 7, title: "Clothing E-commerce", img: Ecom3, category: "E-commerce", tech: ["HTML", "CSS", "JS"], short: "Fashion storefront with product filters, sizes and variants.", visit: "https://muthu4558.github.io/e-commerce/" },
-  { id: 8, title: "Education — Online Test & Notes", img: Neet, category: "Web APP", tech: ["MERN Stack"], short: "Online test portal with notes management and result analytics.", visit: "https://neet-aspire.onrender.com" },
-  { id: 9, title: "28 Sector Landing Page", img: Sector, category: "Web APP", tech: ["MERN Stack"], short: "High-converting landing page for a niche product / vertical.", visit: "https://nizcare-co.onrender.com/" },
+  { id: 2, title: "Hi Tech Enterprises", img: Hitech, category: "Web APP", tech: ["MERN Stack"], short: "A Shop Site, For the Blog page we having Admin Page to change blogs", visit: "https://hitechenterprises.net" },
+  { id: 3, title: "E-commerce (Generic)", img: Ecom1, category: "E-commerce", tech: ["MERN Stack"], short: "Modern e-commerce platform — cart, checkout & order dashboard.", visit: "https://origin-organic.onrender.com" },
+  { id: 4, title: "Musitechhub", img: Musitechhub, category: "Web APP", tech: ["MERN Stack"], short: "A creative agency site for Musitechhub — portfolio, services & contact.", visit: "https://musitechhub.com" },
+  { id: 5, title: "28 Sector Landing Page", img: Sector, category: "Web APP", tech: ["MERN Stack"], short: "High-converting landing page for a niche product / vertical.", visit: "https://nizcare-co.onrender.com/" },
+  { id: 6, title: "VVJM - School", img: School, category: "Landing", tech: ["HTML,CSS", "JS", "PHP"], short: "School website with events, gallery and CMS-driven news pages.", visit: "https://muthu4558.github.io/VVJM/" },
+  { id: 7, title: "Education — Online Test & Notes", img: Neet, category: "Web APP", tech: ["MERN Stack"], short: "Online test portal with notes management and result analytics.", visit: "https://neet-aspire.onrender.com" },
+  { id: 8, title: "Cake E-commerce", img: Ecom2, category: "E-commerce", tech: ["HTML", "CSS", "JS"], short: "Specialised bakery storefront with custom cake builder UI.", visit: "https://muthu4558.github.io/Simple-cakeshop/" },
+  { id: 9, title: "Clothing E-commerce", img: Ecom3, category: "E-commerce", tech: ["HTML", "CSS", "JS"], short: "Fashion storefront with product filters, sizes and variants.", visit: "https://muthu4558.github.io/e-commerce/" },
+  { id: 10, title: "Medical Chatbot", img: ChatBot, category: "Chatbot", tech: ["HTML,CSS", "JS", "Gemeni API"], short: "AI-assisted medical triage chatbot for patient guidance and triaging.", visit: "https://muthu4558.github.io/Medical-chatbot-Nizzy/" },
 ];
 
 const categories = ["All", "Web APP", "E-commerce", "Chatbot", "Landing"];

@@ -17,16 +17,6 @@ import {
 } from "react-icons/si";
 import { RiServerLine } from "react-icons/ri";
 
-/**
- * Tools.jsx
- * - Creative Tools / Tech section for portfolio
- * - Uses TailwindCSS + framer-motion
- * - Interactive tilt on each card, entrance stagger, animated skill bars and micro-interactions
- *
- * Drop into your project and ensure:
- * npm i framer-motion react-icons
- */
-
 const PRIMARY = "#6c845d";
 
 const tools = [
@@ -39,7 +29,7 @@ const tools = [
     { name: "MongoDB", icon: <SiMongodb size={18} />, color: "#47A248", level: 86 },
     { name: "Postman", icon: <SiPostman size={18} />, color: "#FF6C37", level: 82 },
     { name: "REST API", icon: <RiServerLine size={18} />, color: "#0F172A", level: 87 },
-    { name: "Canva", icon: <SiCanva size={18} />, color: "#00C4CC", level: 78 },
+    { name: "Canva", icon: <SiCanva size={18} />, color: "#00C4CC", level: 52 },
 ];
 
 export default function Tools() {
